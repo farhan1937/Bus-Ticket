@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fs Ticket</title>
+    <!-- tailwind and daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
 </head>
+
 <body>
-    
+    <!-- header section  -->
+    <header class="mx-40">
+        <!-- navigation bar  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Destination</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                </div>
+                <h1 class="text-3xl font-bold">FS-Ticket</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Search</a></li>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-[#1DD100] bg-green-100 border-[#1DD100]">Buy <img src="./images/bus-icon.png"
+                        alt=""></a>
+
+
+            </div>
+        </div>
+
+        <!-- banner section  -->
+        <div class="relative hero min-h-screen my-8"
+            style="background:linear-gradient(to top,rgba(0,0,0,0.00),rgba(0,0,0,0.00)), url(./images/banner.png);background-repeat: no-repeat;width:100%; margin-left: auto;margin-right: auto;">
+            <div class=""></div>
+            <div class=" text-center ">
+                <div class="">
+                    <h1 class="mt-[-300px] mb-6 text-6xl font-bold text-white raleway-font">End-to-End Travel with <br>
+                        <span class="text-[#1DD100]">FS Paribahan</span></h1>
+                    <p class="mb-5 text-[#FFFFFF] w-3/4 mx-auto inter-font">Yes, you can run unit tests and view the
+                        results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <button class="btn border-none mt-10 font-bold bg-[#1DD100]">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <!-- opptional section  -->
+        <div class="mx-44 absolute  bottom-4 flex flex-col lg:flex-row gap-10 ">
+            <div class="flex border-b-4 border-2 p-7 border-b-[#1DD100] bg-white rounded-2xl">
+                <img src="./images/people.png" alt="">
+                <div class="inter-font ">
+                    <h2 class="font-bold">500K+</h2>
+                    <p class="text-[#0307126c]">Registered users</p>
+                </div>
+            </div>
+            <div class="flex border-b-4 border-2 p-7 border-b-[#1DD100] bg-white rounded-2xl">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div class="inter-font ">
+                    <h2 class="font-bold">1.7 lacks</h2>
+                    <p class="text-[#0307126c]">Tickets sold</p>
+                </div>
+            </div>
+            <div class="flex border-b-4 border-2 p-7 border-b-[#1DD100] bg-white rounded-2xl">
+                <img src="./images/stoppage.png" alt="">
+                <div class="inter-font ">
+                    <h2 class="font-bold">80K+</h2>
+                    <p class="text-[#0307126c]">Rental partners</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main section  -->
+    <main>
+
+    </main>
+
 </body>
+
 </html>
