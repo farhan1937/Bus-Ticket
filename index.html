@@ -59,17 +59,19 @@
             <div class=""></div>
             <div class=" text-center ">
                 <div class="">
-                    <h1 class="mt-[-300px] mb-6 text-6xl font-bold text-white raleway-font">End-to-End Travel with <br>
+                    <h1 class="mx-auto lg:mt-[-300px] mb-6 lg:text-6xl font-bold text-white raleway-font">End-to-End
+                        Travel with <br>
                         <span class="text-[#1DD100]">FS Paribahan</span>
                     </h1>
                     <p class="mb-5 text-[#FFFFFF] w-3/4 mx-auto inter-font">Yes, you can run unit tests and view the
                         results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn border-none mt-10 font-bold bg-[#1DD100]">Buy Tickets</button>
+                    <a href="#buy-ticket"><button class="btn border-none mt-10 font-bold bg-[#1DD100]">Buy
+                            Tickets</button></a>
                 </div>
             </div>
         </div>
         <!-- opptional section  -->
-        <div class="mx-44 absolute  bottom-4 flex flex-col lg:flex-row gap-10 ">
+        <div class="mx-44 absolute  lg:bottom-4 flex flex-col lg:flex-row gap-10 ">
             <div class="flex border-b-4 border-2 p-7 border-b-[#1DD100] bg-white rounded-2xl">
                 <img src="./images/people.png" alt="">
                 <div class="inter-font ">
@@ -224,54 +226,54 @@
                             <p class="text-[#1DD100]">Selected</p>
                         </div>
                     </div>
+                    <section id="buy-ticket">
+                        <div onclick="getColorById()" class="space-y-4 w-full">
+                            <div class="flex justify-end mr-8 mt-4">
+                                <kdb class="button text-3xl "><img src="./images/Vector.png" alt=""></kdb>
+                            </div>
 
-                    <div onclick="getColorById()" class="space-y-4 w-full">
-                        <div class="flex justify-end mr-8 mt-4">
-                            <kbd class="kbd text-3xl "><img src="./images/Vector.png" alt=""></kbd>
+                            <div class="flex gap-5 text-3xl justify-evenly">A
+                                <button id="all-btn" class="btn">A1</button>
+                                <button id="all-btn" class="btn">A2</button>
+                                <button id="all-btn" class="btn">A3</button>
+                                <button id="all-btn" class="btn">A4</button>
+
+
+                            </div>
+                            <div class="flex gap-5 text-3xl justify-evenly">B
+                                <button id="all-btn" class="btn">B1 </button>
+                                <button id="all-btn" class="btn">B2</button>
+                                <button id="all-btn" class="btn">B3</button>
+                                <button id="all-btn" class="btn">B4</button>
+
+
+                            </div>
+
+
+                            <div class="flex gap-5 text-3xl justify-evenly">C
+                                <button id="all-btn" class="btn">C1</button>
+                                <button id="all-btn" class="btn">C2</button>
+                                <button id="all-btn" class="btn">C3</button>
+                                <button id="all-btn" class="btn">C4</button>
+
+
+                            </div>
+                            <div class="flex gap-5 text-3xl justify-evenly">D
+                                <button id="all-btn" class="btn">D1</button>
+                                <button id="all-btn" class="btn">D2</button>
+                                <button id="all-btn" class="btn">D3</button>
+                                <button id="all-btn" class="btn">D4</button>
+
+
+                            </div>
+                            <div class="flex gap-5 text-3xl justify-evenly">E
+                                <button id="all-btn" class="btn">E1</button>
+                                <button id="all-btn" class="btn">E2</button>
+                                <button id="all-btn" class="btn">E3</button>
+                                <button id="all-btn" class="btn">E4</button>
+                            </div>
+
                         </div>
-
-                        <div class="flex gap-5 text-3xl justify-evenly">A
-                            <kbd class="kbd">A1</kbd>
-                            <kbd class="kbd">A2</kbd>
-                            <kbd class="kbd">A3</kbd>
-                            <kbd class="kbd">A4</kbd>
-
-
-                        </div>
-                        <div class="flex gap-5 text-3xl justify-evenly">B
-                            <kbd class="kbd">B1 </kbd>
-                            <kbd class="kbd">B2</kbd>
-                            <kbd class="kbd">B3</kbd>
-                            <kbd class="kbd">B4</kbd>
-
-
-                        </div>
-
-
-                        <div class="flex gap-5 text-3xl justify-evenly">C
-                            <kbd class="kbd">C1</kbd>
-                            <kbd class="kbd">C2</kbd>
-                            <kbd class="kbd">C3</kbd>
-                            <kbd class="kbd">C4</kbd>
-
-
-                        </div>
-                        <div class="flex gap-5 text-3xl justify-evenly">D
-                            <kbd class="kbd">D1</kbd>
-                            <kbd class="kbd">D2</kbd>
-                            <kbd class="kbd">D3</kbd>
-                            <kbd class="kbd">D4</kbd>
-
-
-                        </div>
-                        <div class="flex gap-5 text-3xl justify-evenly">E
-                            <kbd class="kbd">E1</kbd>
-                            <kbd class="kbd">E2</kbd>
-                            <kbd class="kbd">E3</kbd>
-                            <kbd class="kbd">E4</kbd>
-                        </div>
-
-                    </div>
 
                 </div>
                 <!-- ========= -->
@@ -279,7 +281,7 @@
                     <h4 class="raleway-font font-bold p-2 border-b-2 border-dashed">Select Your Seat</h4>
                     <div class="bg-[#03071206] p-8">
                         <div class="flex justify-between ">
-                            <p class="font-bold raleway-font text-[#030712]">Seat</p>
+                            <p class="font-bold raleway-font text-[#030712]">Seat <span id="count-number">0</span></p>
                             <p class="font-bold raleway-font text-[#030712]">Class</p>
                             <p class="font-bold raleway-font text-[#030712]">Price</p>
                         </div>
@@ -299,7 +301,8 @@
                         </div>
                         <div class="flex justify-center items-center ">
                             <input class="p-5 w-3/4 rounded-xl mt-5" type="text" placeholder="Have any copupon?">
-                            <button class="btn mt-4 mb-16 relative right-20 top-8 bg-[#1DD100] text-white">Apply</button>
+                            <button
+                                class="btn mt-4 mb-16 relative right-20 top-8 bg-[#1DD100] text-white">Apply</button>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -329,6 +332,7 @@
 
 
             </div>
+        </section>
 
         </section>
 
@@ -336,6 +340,9 @@
 
 
     </main>
+
+
+    <script src="./JS/ticket.js"></script>
 
 </body>
 
